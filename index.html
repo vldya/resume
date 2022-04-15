@@ -4,31 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Мой проект</title>
 </head>
 <body>
-<img src="9ci-PTnbzIM.jpg" width="300" alt="Моя аватарка">
+  <div class="container">
+  <div class="info">
+
+
+<img src="9ci-PTnbzIM.jpg" alt="Моя аватарка" class="avatar">
+
+
+<div class="info-text">
 <h1>Владимир Дыбин</h1>
 <p>Я хочу стать <strong> Frontend developer </strong> чтобы иметь хороший <em>уровень дохода и уехать из России</em></p>
 <p>Я люблю <em>путешествовать и изучать что-то новое</em> поэтому, хочется верить, что у меня все получится</p>
 <h4>Список социальных сетей:</h4>
-<a href="https://www.instagram.com" target="_blank">Instagram</a>
-<a href="https://twitter.com/home" target="_blank">Twitter</a>
+<a href="https://www.instagram.com" target="_blank" class="links">Instagram</a>
+<a href="https://twitter.com/home" target="_blank" class="links">Twitter</a>
+</div>
+</div>
+
+<div class="card bg-1">
 <h2>Мои Хобби</h2>
-<ol>
+<ol class="list">
   <li>Спорт</li>
   <li>Чтение</li>
   <li>Путешествия</li>
   <li>Английский язык</li>
   <li>Надеюсь, что программирование</li>
 </ol>
+</div>
+
+<div class="card bg-2">
 <h2>Мой опыт работы</h2>
-<table>
-  <thead>
-    <th>Название</th>
-    <th>Должность</th>
-    <th>Год</th>
-  </thead>
+<table class="table">
+  <!-- <thead> -->
+    <!-- <th>Название</th> -->
+    <!-- <th>Должность</th> -->
+    <!-- <th>Год</th> -->
+  <!-- </thead> -->
   <tbody>
     <tr>
     <td>Брянск Пиво</td>
@@ -47,27 +62,34 @@
   </tr>  
   </tbody>
 </table>
+</div>
 
-<h2>Связаться со мной</h2>
-<form action="/">
-  <div>
+<div class="card bg-3">
+
+<form action="/" class="form">
+  <h2>Связаться со мной</h2>
+  
+  <div class="form-row">
+  <div class="form-group">
     <label for="name">Ваше имя:</label>
     <input type="text" id="name" placeholder="Введите имя">
   </div>
 
-  <div>
+  <div class="form-group">
     <label for="email">Ваш email:</label>
     <input type="email" id="email" placeholder="Введите email">
   </div>
+</div>
 
-  <div>
+  <div class="form-group">
     <label for="message">Ваше сообщение:</label>
     <br>
     <textarea id="message" cols="20" rows="4" placeholder="Введите сообщение"></textarea>
   </div>
 
-  <input type="submit" value="Отправить форму">
+  <input class="btn" type="submit" value="Отправить форму" >
 </form>
-
+</div>
+</div>
 </body>
 </html>
